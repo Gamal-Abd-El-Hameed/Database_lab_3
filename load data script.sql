@@ -13,6 +13,7 @@ lines terminated by '\n'
 ignore 1 lines
 (sample19015550.book.BookId,sample19015550.book.Title,sample19015550.book.PublisherName);
 
+
 load data local infile "D:\\College\\term5\\Data Base\\Database_lab_3\\Data tables\\BOOK_AUTHORS.csv" into table sample19015550.book_authors
 fields terminated by ',' 
 lines terminated by '\n'
@@ -20,7 +21,7 @@ ignore 1 lines;
 
 
 load data local infile "D:\\College\\term5\\Data Base\\Database_lab_3\\Data tables\\BORROWER.csv" into table sample19015550.borrower
-fields terminated by ','
+fields terminated by ',' 
 lines terminated by '\n'
 ignore 1 lines;
 
@@ -30,7 +31,7 @@ lines terminated by '\n'
 ignore 1 lines;
 
 load data local infile "D:\\College\\term5\\Data Base\\Database_lab_3\\Data tables\\BOOK_LOANS.csv" into table sample19015550.book_loans
-fields terminated by ','
+fields terminated by ',' ENCLOSED BY '"'
 lines terminated by '\n'
 ignore 1 lines;
 
@@ -38,3 +39,5 @@ load data local infile "D:\\College\\term5\\Data Base\\Database_lab_3\\Data tabl
 fields terminated by ',' 
 lines terminated by '\n'
 ignore 1 lines;
+
+select sample19015550.publisher
